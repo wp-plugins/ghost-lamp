@@ -6,7 +6,7 @@ Plugin URI: http://ghostlamp.com
 Tags: wp, Ghost Lamp, contextual advertising
 Author URI: http://www.cifrawebtech.com
 Author: Vijay
-Version: 0.1
+Version: 0.2
 
 == Description ==
 A plugin for Ghost Lamp users to activate Ghost Lamp on a WordPress website.

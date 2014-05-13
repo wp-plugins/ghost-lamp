@@ -2,9 +2,9 @@
 /*
   Plugin Name: Ghost Lamp plugin
   Plugin URI: http://www.cifrawebtech.com
-  Description: Ghost Lamp plugin to inject script in posts and admin.
+  Description: A plugin for Ghost Lamp users to activate Ghost Lamp on a WordPress website.
   Author: Vijay
-  Version: 0.1
+  Version: 0.2
 */
 ?>
 <?php
@@ -84,7 +84,8 @@ clear: both;width: 283px;margin-top: 23px;float: left;margin-left: 73px;}
     // Inject script to admin footer
     add_action('in_admin_footer', 'inject_admin_footer');
     function inject_admin_footer () {
-        if(isset($_GET['post'])&&$_GET['action']=='edit'){
+    	$currFile = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
+        if($currFile == 'post.php' || $currFile == 'post-new.php') {
 	    $gl_domain=get_option('gl_domain','');
 	    $gl_key=get_option('gl_key','');
 	    $gl_beta=get_option('gl_beta','');
