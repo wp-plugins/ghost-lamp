@@ -4,7 +4,7 @@
   Plugin URI: http://www.cifrawebtech.com
   Description: A plugin for Ghost Lamp users to activate Ghost Lamp on a WordPress website.
   Author: Vijay
-  Version: 0.3beta
+  Version: 0.5beta
 */
 ?>
 <?php
