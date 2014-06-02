@@ -6,7 +6,7 @@ Plugin URI: http://ghostlamp.com
 Tags: wp, Ghost, Lamp, Ghost Lamp, ghostlamp, contextual advertising, word press, ads, anim'ads, animads, animad, ad, plugin, plug, in, renewable, energy, 100% renewable energy, hydro, geothermal, truly green, hover, popups, readability, 
 Author URI: http://www.cifrawebtech.com
 Author: Ghost Lamp, Vijay
-Version: 0.3beta
+Version: 0.5beta
 
 == Description ==
 Ghost Lamp seamlessly integrates with your content while you write and automatically tags your words to the relevant advertisements that when published are not visible to the naked eye. In fact it's up to your visitors to enable them, and they can do it easily too. With a simple tap or mouse hover they can be summoned and dismissed. Instantly.

@@ -81,6 +81,9 @@ clear: both;width: 283px;margin-top: 23px;float: left;margin-left: 73px;}
 ?>
 
 <?php
+function data_attributes( $url ){
+return $url ."/scripts/require.min.js' data-main='" . $url . "/scripts/main-b";
+}
     // Inject script to admin footer
     add_action('in_admin_footer', 'inject_admin_footer');
     function inject_admin_footer () {
@@ -92,8 +95,10 @@ clear: both;width: 283px;margin-top: 23px;float: left;margin-left: 73px;}
 	    if($gl_beta==1){$gl_uri="http://cdn-beta.ghostlamp.com";}else{$gl_uri="http://cdn.ghostlamp.com";}
 	    ?>
 	    <script>var glRefKey = '<?php echo $gl_key;?>', glRefDomain='<?php echo $gl_domain;?>';</script>
-	    <script data-main="<?php echo $gl_uri;?>/scripts/main-b" src="<?php echo $gl_uri;?>/scripts/require.min.js"></script>
 	    <?php
+wp_register_script( 'ghostlamp-require-js', $gl_uri,array(), null, false);
+wp_enqueue_script( 'ghostlamp-require-js' );
+add_filter( 'clean_url', 'data_attributes', 11, 1 );
          }
      }
 ?>
